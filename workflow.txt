@@ -1,0 +1,27 @@
+DOD:
+- Alla i gruppen har sett och testat och bockat i sitt namn i up for review. 
+- pushat till master
+
+GIT:
+- jobba i egen brach lokalt
+- pusha till egen branch remote
+- efter DOD pusha till master
+
+DAILY SCRUM:
+- kl 9 varje vardag.
+- Hur mår vi?
+- Visa / förklara vad man gjort.
+
+STYLING
+- Gör bara basic najs först
+- Om vi har tid, krydda!
+- Font: Poppins 😺
+
+SOCIALT KONTRAKT:
+- Lärande i fokus.
+- Alltid ok att fråga, det välkomnas.
+- Öppen kommunikation om saker uppstår, när man är tillgänglig och inte. 
+- Tänk på att svenska inte är Marias första språk, kan va enklare att skriva ner. Prata tydligt! Avbryt gärna om det går för fort.
+- Konstruktiv kritik välkomnas, men lägg fram kommentarer på ett schysst sätt.
+- Första och uppsamlings-session med hela gruppen.
+
