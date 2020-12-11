@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import MarketListItem from '../components/MarketListItem';
 
 export default function SpecificMarketPage(props) {
 	const [specificMarket, setSpecificMarket] = useState(null);
@@ -20,7 +21,11 @@ export default function SpecificMarketPage(props) {
 				<>
 					<h3>{specificMarket[0][1].market}</h3>
 					{specificMarket.map((stock) => (
-						<li>{stock[1].name}</li>
+						<MarketListItem
+						key={stock[0]}
+						listItemData={stock}
+						stock
+						>{stock[1].name}</MarketListItem>
 					))}
 				</>
 			)}
