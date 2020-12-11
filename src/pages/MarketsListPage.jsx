@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import MarketListItem from '../components/MarketListItem';
+import ListItem from '../components/ListItem';
 
 export default function MarketsListPage() {
 	const [marketList, setMarketList] = useState(null);
@@ -23,11 +23,11 @@ export default function MarketsListPage() {
 			<ul>
 				{marketList &&
 					Object.entries(marketList).map((marketListItem) => (
-						<MarketListItem
+						<ListItem
 							key={marketListItem[0]}
-							listItemData={marketListItem}>
+							listItemData={marketListItem} markets>
 							{marketListItem[0]}
-						</MarketListItem>
+						</ListItem>
 					))}
 			</ul>
 		</div>
