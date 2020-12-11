@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -18,11 +19,11 @@ export default function IndexListPage() {
             <h3>Index list page</h3>
             {!indexList && <p>Loading...</p>}
             <div>
+            {indexList && console.log(indexList)}
             {indexList && Object.entries(indexList).map(indexItem => {
                 const key = indexItem[0]
                 const value = indexItem[1]
-                console.log(value.name);
-                return <p key={key}>{value.name}</p>
+                return <Link to={`/indexes/${value.ticker}`}><p key={key}>{value.name}</p></Link>
             })}
             </div>
         </div>

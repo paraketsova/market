@@ -6,6 +6,7 @@ import IndexListPage from './pages/IndexListPage';
 import MarketsListPage from './pages/MarketsListPage';
 import Navigation from './components/Navigation';
 import HeaderStyled from './components/HeaderStyled';
+import IndexDetailPage from './pages/IndexDetailPage';
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
       </HeaderStyled>
 
       <Switch>
+
+        <Route path="/indexes/:id" component={IndexDetailPage}>
+
+        </Route>
 
         <Route path="/crypto">
           <CryptoListPage />
