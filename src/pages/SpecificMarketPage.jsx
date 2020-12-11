@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import MarketListItem from '../components/MarketListItem';
+import ListItem from '../components/ListItem';
+
 
 export default function SpecificMarketPage(props) {
 	const [specificMarket, setSpecificMarket] = useState(null);
-
+	
 	function specificMarketFetch() {
 		const id = props.match.params.id;
 		const url = `https://market-data-collector.firebaseio.com/market-collector/markets/${id}.json`;
@@ -14,6 +14,7 @@ export default function SpecificMarketPage(props) {
 	}
 
 	useEffect(specificMarketFetch, []);
+
 	return (
 		<div>
 			{!specificMarket && <h3>Loading...</h3>}
@@ -21,11 +22,9 @@ export default function SpecificMarketPage(props) {
 				<>
 					<h3>{specificMarket[0][1].market}</h3>
 					{specificMarket.map((stock) => (
-						<MarketListItem
-						key={stock[0]}
-						listItemData={stock}
-						stock
-						>{stock[1].name}</MarketListItem>
+						<ListItem key={stock[0]} listItemData={stock} stock>
+							{stock[1].name}
+						</ListItem>
 					))}
 				</>
 			)}

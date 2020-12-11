@@ -7,6 +7,7 @@ import MarketsListPage from './pages/MarketsListPage';
 import Navigation from './components/Navigation';
 import HeaderStyled from './components/HeaderStyled';
 import SpecificMarketPage from './pages/SpecificMarketPage';
+import StockDetailPage from './pages/StockDetailPage';
 
 function App() {
   return (
@@ -29,8 +30,12 @@ function App() {
         <Route path="/indexes">
           <IndexListPage />
         </Route>
-        <Route path="/markets/:id" component={SpecificMarketPage}/>
 
+        <Route path="/market/stock/:market/:stock" component={StockDetailPage}/>
+        
+        <Route path="/market/:id" component={SpecificMarketPage}/>
+        
+        
         <Route path="/markets">
           <MarketsListPage />
         </Route>
