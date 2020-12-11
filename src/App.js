@@ -1,11 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import HeaderStyled from './components/HeaderStyled';
+import Navigation from './components/Navigation';
 import CryptoListPage from './pages/CryptoListPage';
 import CurrenciesListPage from './pages/CurrenciesListPage';
 import IndexListPage from './pages/IndexListPage';
 import MarketsListPage from './pages/MarketsListPage';
-import Navigation from './components/Navigation';
-import HeaderStyled from './components/HeaderStyled';
+import CryptoDetailsPage from './pages/CryptoDetailsPage';
 
 function App() {
   return (
@@ -16,10 +17,20 @@ function App() {
       </HeaderStyled>
 
       <Switch>
+        
+        <Route 
+          path="/crypto/:id"
+          component={CryptoDetailsPage}
+        />
+
+        <Route path="/crypto/details">
+          <CryptoDetailsPage />
+        </Route>
 
         <Route path="/crypto">
           <CryptoListPage />
         </Route>
+
 
         <Route path="/currencies">
           <CurrenciesListPage />
