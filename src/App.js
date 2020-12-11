@@ -5,14 +5,15 @@ import CurrenciesListPage from './pages/CurrenciesListPage';
 import IndexListPage from './pages/IndexListPage';
 import MarketsListPage from './pages/MarketsListPage';
 import Navigation from './components/Navigation';
+import HeaderStyled from './components/HeaderStyled';
 
 function App() {
   return (
     <div>
-
-      <h1>Stockmarket</h1>
-
-      <Navigation />
+      <HeaderStyled>
+        <h1>Stockmarket</h1>
+        <Navigation />
+      </HeaderStyled>
 
       <Switch>
 

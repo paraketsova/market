@@ -5,14 +5,15 @@ const StyledUL = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-between;
+  width: 30vw;
 
   li{
     a{
       text-decoration: none;
-      background: ${colors.carrotOrange};
+      color: ${colors.floralWhite};
 
       &:hover{
-        color: white; 
+        color: ${colors.carrotOrange};
       }
     }
   }
