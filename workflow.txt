@@ -25,3 +25,7 @@ SOCIALT KONTRAKT:
 - Konstruktiv kritik välkomnas, men lägg fram kommentarer på ett schysst sätt.
 - Första och uppsamlings-session med hela gruppen.
 
+TODO:
+- import react-router-dom och wrappa <app> i <browserrouter>
+- skapa pages med basic output
+- skapa routes

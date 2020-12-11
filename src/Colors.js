@@ -1,4 +1,4 @@
-const Colors = {
+const colors = {
 	mediumSeaGreen: '#1FB163',
 	flame: '#DC542E',
 	earieBlack: '#222222',
@@ -8,4 +8,4 @@ const Colors = {
 	carrotOrange: '#ED9B40',
 };
 
-export default Colors;
+export default colors;
