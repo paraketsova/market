@@ -11,7 +11,7 @@ export default function DetailPageCurrency(props) {
         fetch(url)
         .then(response => response.json())
         .then(data => setPostData(data))
-    },[])
+    },[id])
     return (
         <div>
             {!postData && <p>Loading . . .</p>}
