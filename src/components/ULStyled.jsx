@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 import colors from '../Colors';
 
-const StyledUL = styled.ul`
+const ULStyled = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 30vw;
+  
 
   li{
+    margin-left: 1.2rem;
     a{
       text-decoration: none;
       color: ${colors.floralWhite};
@@ -19,4 +20,4 @@ const StyledUL = styled.ul`
   }
 `
 
-export { StyledUL }
+export { ULStyled }
