@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 import colors from '../Colors';
 
-const HeaderStyled = styled.header`
+const FooterStyled = styled.footer`
   background: ${colors.earieBlack};
   color: ${colors.floralWhite};
   width: 100vw;
   display: flex;
   justify-content: space-between;
   padding: 1.2rem;
-  height: 10vh;
+  height: 5vh;
   align-items: center;
+  font-size: 0.7rem;
 `
 
-export default HeaderStyled;
+export default FooterStyled;
