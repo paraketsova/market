@@ -6,10 +6,15 @@ import CryptoListPage from './pages/CryptoListPage';
 import CurrenciesListPage from './pages/CurrenciesListPage';
 import IndexListPage from './pages/IndexListPage';
 import MarketsListPage from './pages/MarketsListPage';
+
+
+import DetailPageCurrency from './pages/DetailPageCurrency';
+
 import IndexDetailPage from './pages/IndexDetailPage';
 import CryptoDetailsPage from './pages/CryptoDetailsPage';
 import SpecificMarketPage from './pages/SpecificMarketPage';
 import StockDetailPage from './pages/StockDetailPage';
+
 
 
 function App() {
@@ -37,9 +42,12 @@ function App() {
         </Route>
 
 
+        <Route path="/currencies/:id" component={DetailPageCurrency} />
+
+
         <Route path="/currencies">
           <CurrenciesListPage />
-        </Route>
+        </Route>        
 
         <Route path="/indexes">
           <IndexListPage />
