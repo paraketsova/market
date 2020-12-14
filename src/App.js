@@ -17,15 +17,11 @@ function App() {
       </HeaderStyled>
 
       <Switch>
-        
+
         <Route 
           path="/crypto/:id"
           component={CryptoDetailsPage}
         />
-
-        <Route path="/crypto/details">
-          <CryptoDetailsPage />
-        </Route>
 
         <Route path="/crypto">
           <CryptoListPage />

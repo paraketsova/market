@@ -12,8 +12,8 @@ export default function CryptoDetailsPage(props) {
     }, [] );
 
     return (
-        <div class='container'>
-            <div class='row'>
+        <div>
+            <div>
                 <p>Product Details Page</p>
             {!cryptoItem && <p>Loading</p>}
             {cryptoItem && (
@@ -21,7 +21,7 @@ export default function CryptoDetailsPage(props) {
                 <h3>{cryptoItem.name}</h3>
                 <p>Price: {cryptoItem.price}</p>
                 <p>Market: {cryptoItem.market}</p>
-                <p>Source:{cryptoItem.source}</p>
+                <p>Source: {cryptoItem.source}</p>
                 <p>Today: {cryptoItem.today}</p>
               </>
             )}
