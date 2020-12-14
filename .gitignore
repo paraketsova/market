@@ -8,6 +8,8 @@ node_modules
 
 # testing
 /coverage
+.eslintcache
+debug.log
 
 # production
 /build
