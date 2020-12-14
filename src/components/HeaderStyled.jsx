@@ -4,7 +4,7 @@ import colors from '../Colors';
 const HeaderStyled = styled.header`
   background: ${colors.earieBlack};
   color: ${colors.floralWhite};
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1.2rem;

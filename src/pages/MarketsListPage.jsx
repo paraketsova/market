@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { LinkListStyled } from '../components/LinkListStyled';
 import ListItem from '../components/ListItem';
 
 export default function MarketsListPage() {
@@ -20,7 +21,7 @@ export default function MarketsListPage() {
 			<h3>Market list page</h3>
 
 			{!marketList && <h3>Loading...</h3>}
-			<ul>
+			<LinkListStyled>
 				{marketList &&
 					Object.entries(marketList).map((marketListItem) => (
 						<ListItem
@@ -29,7 +30,7 @@ export default function MarketsListPage() {
 							{marketListItem[0]}
 						</ListItem>
 					))}
-			</ul>
+			</LinkListStyled>
 		</div>
 	);
 }

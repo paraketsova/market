@@ -5,7 +5,7 @@ export default function Details({itemData}) {
     return (
         <div>         
             <h3>{itemData.name}</h3>            
-            <p>Price(SEK): {itemData.price}</p>
+            <p>Price: {itemData.price}</p>
             <p>Today: <ChangeSpan number={itemData.today}/></p>   
             <p>One week: <ChangeSpan number={itemData.w1}/></p>   
             <p>3 years: <ChangeSpan number={itemData.y3}/></p>   

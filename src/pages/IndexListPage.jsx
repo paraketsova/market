@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
-
+import {LinkListStyled} from '../components/LinkListStyled'
+import ListItem from '../components/ListItem';
 
 
 export default function IndexListPage() {
@@ -18,14 +19,15 @@ export default function IndexListPage() {
         <div>
             <h3>Index list page</h3>
             {!indexList && <p>Loading...</p>}
-            <div>
-            {indexList && console.log(indexList)}
-            {indexList && Object.entries(indexList).map(indexItem => {
-                const key = indexItem[0]
-                const value = indexItem[1]
-                return <Link to={`/indexes/${value.ticker}`}><p key={key}>{value.name}</p></Link>
-            })}
-            </div>
+            <LinkListStyled>
+            {indexList && Object.entries(indexList).map((indexItem) => (                
+                <ListItem
+                    key={indexItem[0]}
+                    listItemData={indexItem} index>
+                    {indexItem[0]}
+                </ListItem>                
+            ))}
+            </LinkListStyled>
         </div>
     )
 }
