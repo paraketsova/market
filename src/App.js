@@ -7,6 +7,9 @@ import CurrenciesListPage from './pages/CurrenciesListPage';
 import IndexListPage from './pages/IndexListPage';
 import MarketsListPage from './pages/MarketsListPage';
 import CryptoDetailsPage from './pages/CryptoDetailsPage';
+import SpecificMarketPage from './pages/SpecificMarketPage';
+import StockDetailPage from './pages/StockDetailPage';
+
 
 function App() {
   return (
@@ -36,6 +39,11 @@ function App() {
           <IndexListPage />
         </Route>
 
+        <Route path="/market/stock/:market/:stock" component={StockDetailPage}/>
+        
+        <Route path="/market/:id" component={SpecificMarketPage}/>
+        
+        
         <Route path="/markets">
           <MarketsListPage />
         </Route>
