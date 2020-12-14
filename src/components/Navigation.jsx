@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { StyledUL } from './StyledUL';
+import { ULStyled } from './ULStyled';
 
 export default function Navigation() {
     return (
 
-      <StyledUL>
+      <ULStyled>
           <li>
               <Link to="/">Home</Link>
           </li>
@@ -21,7 +21,7 @@ export default function Navigation() {
           <li>
               <Link to="/markets">Markets</Link>
           </li>
-      </StyledUL>
+      </ULStyled>
 
     )
 }
