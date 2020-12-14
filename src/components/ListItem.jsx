@@ -6,7 +6,6 @@ export default function ListItem({ children, listItemData, stock, markets }) {
 
 	return (
 		<>
-		
 			{stock && (
 				<Link to={`stock/${market}/${id}`}>
 					<li>{children}</li>
