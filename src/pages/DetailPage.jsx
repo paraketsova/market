@@ -1,22 +1,24 @@
 import React, {useState, useEffect} from 'react'
 import Details from '../components/Details'
+import DetailsCrypto from '../components/DetailsCrypto';
 
-export default function DetailPage(data) {
-    const [detailData, setDetailData] = useState(null)
-
+export default function DetailPage(props) {
+    const [detailData, setDetailData] = useState(null);
+    
     function dataFetch(){
         let url;
         const id = props.match.params.id;
         const market = props.match.params.market;
-		const stock = props.match.params.stock;
+        const stock = props.match.params.stock;
+        const pathname = props.history.location.pathname;
 
-        if (crypto){
+        if (pathname.includes('crypto')){
             url = `https://market-data-collector.firebaseio.com/market-collector/crypto/usd/${id}.json`
-        } else if (currencies){
+        } else if (pathname.includes('currencies')){
             url = `https://market-data-collector.firebaseio.com/market-collector/currencies/sek/${id}.json`
-        } else if (indexes){
+        } else if (pathname.includes('indexes')){
             url = `https://market-data-collector.firebaseio.com/market-collector/indexes/se/${id}.json`
-        } else if (stocks){
+        } else if (pathname.includes('stock')){
             url = `https://market-data-collector.firebaseio.com/market-collector/markets/${market}/${stock}.json`
         }
         
@@ -28,11 +30,7 @@ export default function DetailPage(data) {
     useEffect(dataFetch,[]);
     return (
         <div>
-            {crypto ?
-            <DetailsCrypto itemData={data}/>
-            :
-            <Details itemData={data}/>
-            }
+            {detailData && <Details itemData={detailData}/>}
         </div>
     )
 }

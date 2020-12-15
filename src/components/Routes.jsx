@@ -9,19 +9,20 @@ import IndexDetailPage from '../pages/IndexDetailPage';
 import CryptoDetailsPage from '../pages/CryptoDetailsPage';
 import SpecificMarketPage from '../pages/SpecificMarketPage';
 import StockDetailPage from '../pages/StockDetailPage';
+import DetailPage from '../pages/DetailPage';
 
 export default function Routes() {
     return (
         
             
           <Switch>
-            <Route path="/indexes/:id" component={IndexDetailPage}>
+            <Route path="/indexes/:id" component={DetailPage}>
 
             </Route>
 
             <Route 
               path="/crypto/:id"
-              component={CryptoDetailsPage}
+              component={DetailPage}
             />
 
             <Route path="/crypto">
@@ -29,7 +30,7 @@ export default function Routes() {
             </Route>
 
 
-            <Route path="/currencies/:id" component={DetailPageCurrency} />
+            <Route path="/currencies/:id" component={DetailPage} />
 
 
             <Route path="/currencies">
@@ -40,7 +41,7 @@ export default function Routes() {
               <IndexListPage />
             </Route>
 
-            <Route path="/market/stock/:market/:stock" component={StockDetailPage}/>
+            <Route path="/market/stock/:market/:stock" component={DetailPage} stocks/>
             
             <Route path="/market/:id" component={SpecificMarketPage}/>
             
