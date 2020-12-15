@@ -1,4 +1,3 @@
-//import React from 'react'
 import styled from 'styled-components'
 import colors from '../Colors'
 
@@ -11,7 +10,6 @@ const LinkListStyled = styled.ul`
 
     a{
       text-decoration: none;
-
       li{
         color: ${colors.earieBlack};
         height: 4rem;

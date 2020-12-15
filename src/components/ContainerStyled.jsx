@@ -5,7 +5,6 @@ const ContainerStyled = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: rgba( 254, 253, 244, 0.5); */
   & > div {
     height: 80vh;
     width: 50vw;

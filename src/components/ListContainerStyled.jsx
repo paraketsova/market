@@ -5,7 +5,6 @@ const ListContainerStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: rgba( 254, 253, 244, 0.5); */
 `
 
 export default ListContainerStyled;
