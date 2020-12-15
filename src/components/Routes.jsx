@@ -7,9 +7,8 @@ export default function Routes() {
     return (
          
           <Switch>
-            <Route path="/indexes/:id" component={DetailPage}>
-
-            </Route>
+          
+            <Route path="/indexes/:id" component={DetailPage}/>
 
             <Route 
               path="/crypto/:id"
