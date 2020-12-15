@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import Details from '../components/Details'
-import DetailsCrypto from '../components/DetailsCrypto';
 
 export default function DetailPage(props) {
     const [detailData, setDetailData] = useState(null);
