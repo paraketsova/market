@@ -1,6 +1,7 @@
 import React from 'react'
 import { SpanStyled } from './SpanStyled'
 
+// Used to change negative stock number to red and positive to green. 
 export default function ChangeSpan({number}) {
     return (
         <>
