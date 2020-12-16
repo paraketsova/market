@@ -1,3 +1,4 @@
+// All colors used on the site
 const colors = {
 	mediumSeaGreen: '#1FB163',
 	flame: '#DC542E',
