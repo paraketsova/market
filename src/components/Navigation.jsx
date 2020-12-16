@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ULStyled } from './ULStyled';
 
+// Correct links to nav bar
 export default function Navigation() {
     return (
 

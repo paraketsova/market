@@ -1,10 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import List from '../components/List';
 
+// Prints the right data to all list pages on the site.
 export default function ListPage(props) {
   const [list, setList] = useState(null);
   let url, title, args;
   
+  // Fetch different url depending on which category is clicked. 
+  // sets correct title and url path for each category to send to <List>.
   if(props.crypto){
     args = 'crypto';
     title = 'Crypto';

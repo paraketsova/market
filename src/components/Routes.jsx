@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import DetailPage from '../pages/DetailPage';
 import ListPage from '../pages/ListPage';
 
+// Contains all routes to different pages on the site.
 export default function Routes() {
     return (
          

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import colors from '../Colors'
 
+// For all items in the different data listed on all pages.
 const LinkListStyled = styled.ul`
   list-style: none;
   width: 50vw;

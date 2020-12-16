@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import colors from '../Colors';
 
+// Styling for nav bar
 const ULStyled = styled.ul`
   list-style: none;
   display: flex;
@@ -12,9 +13,11 @@ const ULStyled = styled.ul`
     a{
       text-decoration: none;
       color: ${colors.floralWhite};
+      transition: .3s;
 
       &:hover{
         color: ${colors.carrotOrange};
+        font-size: 1.1rem;
       }
     }
   }
