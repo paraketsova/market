@@ -9,7 +9,7 @@ const ContainerStyled = styled.div `
   
 
   & > div {
-    height: 80vh;
+    max-height: 80vh;
     width: 50vw;
     overflow: scroll;
   }
