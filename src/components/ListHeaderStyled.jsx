@@ -11,6 +11,7 @@ const ListHeaderStyled = styled.div`
   font-size: 1.2rem;
   position: sticky;
   top: 0;
+  justify-content: space-between;
 `
 
 export default ListHeaderStyled;
