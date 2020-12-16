@@ -12,6 +12,7 @@ const ContainerStyled = styled.div `
     max-height: 80vh;
     width: 50vw;
     overflow: scroll;
+    overflow-x: hidden;
   }
   `
 
