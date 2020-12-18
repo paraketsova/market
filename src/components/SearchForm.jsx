@@ -8,14 +8,18 @@ export default function SearchForm() {
   const history = useHistory();
 
   const handleOnClick = useCallback(() => {
-    console.log(inputSearch);//TEST
     console.log(inputSearch.current.value);//TEST
     history.push('/search?q=' + encodeURIComponent(inputSearch.current.value));
   }, [history]);
+  console.log(history.location);//TEST
+  console.log(history);//TEST
+
+
+
 
 
   return (
-    <>
+    <div>
       <input
         ref = {inputSearch}
         type='search'
@@ -23,6 +27,6 @@ export default function SearchForm() {
       />
       <button onClick={handleOnClick}>Search</button>
         {/* <Link to="/search"></Link> */}
-    </>
+    </div>
   );
 }
