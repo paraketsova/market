@@ -19,11 +19,13 @@ export default function SearchResultPage() {
 
   return (
     <div>
-      <>RESULT</>
+      <>RESULTS OF SEARCHING:</>
       {!searchData && <p>Loading</p>}
       {searchData && Object.entries(searchData).map(searchItem => {
-        {console.log(searchData)}
-        return <p>Search Item</p>  
+        const key = searchItem[0]
+        const value = searchItem[1]
+        console.log(value)
+        return <p key={key}>{value.name}</p>  
       })}
     </div>
     
