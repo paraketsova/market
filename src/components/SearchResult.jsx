@@ -1,13 +1,18 @@
-import React, {useRef} from 'react';
+import React, {useRef, useCallback} from 'react';
+import {useHistory} from 'react-router-dom';
+
 
 
 export default function SearchResult() {
   const inputSearch = useRef();
+  const history = useHistory();
 
-  function handleOnClick() {
+  const handleOnClick = useCallback(() => {
     console.log(inputSearch);//TEST
     console.log(inputSearch.current.value);//TEST
-  }
+    history.push('/search?q=' + encodeURIComponent(inputSearch.current.value));
+  }, [history]);
+
 
     return (
       <>
