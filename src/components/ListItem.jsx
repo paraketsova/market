@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Gets the correct link in each list.
 export default function ListItem({ children, listItemData, type }) {
 	const id = listItemData[0];
 	const market = listItemData[1].market;
