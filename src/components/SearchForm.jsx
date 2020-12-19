@@ -2,7 +2,6 @@ import React, {useRef, useCallback} from 'react';
 import {useHistory} from 'react-router-dom';
 
 
-
 export default function SearchForm() {
   const inputSearch = useRef();
   const history = useHistory();
@@ -11,22 +10,17 @@ export default function SearchForm() {
     console.log(inputSearch.current.value);//TEST
     history.push('/search?q=' + encodeURIComponent(inputSearch.current.value));
   }, [history]);
-  console.log(history.location);//TEST
-  console.log(history);//TEST
-
-
-
-
+/*   console.log(history.location);//TEST
+  console.log(history);//TEST */
 
   return (
     <div>
       <input
         ref = {inputSearch}
         type='search'
-        placeholder='Search'
+        placeholder='Search crypto...'
       />
-      <button onClick={handleOnClick}>Search</button>
-        {/* <Link to="/search"></Link> */}
+      <button onClick={handleOnClick}>🔎</button>
     </div>
   );
 }

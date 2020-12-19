@@ -4,7 +4,7 @@ import ListContainerStyled from "./ListContainerStyled";
 import ListHeaderStyled from "./ListHeaderStyled";
 import ListItem from "./ListItem";
 
-// Prints all the correct data to a list for all categories.
+// Prints all the correct data to a list for crypto.
 export default function List(props) {
   const { list } = props;
   return (
