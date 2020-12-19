@@ -20,7 +20,7 @@ export default function SearchForm() {
         type='search'
         placeholder='Search crypto...'
       />
-      <button onClick={handleOnClick}>🔎</button>
+      <button onClick={handleOnClick}>🔍</button>
     </div>
   );
 }
