@@ -1,10 +1,10 @@
 import colors from '../Colors'
 import styled from 'styled-components'
 
-// Red color for negative numbers and green for positive numbers. 
+// Used to change negative stock number to red and positive to green.  
 const SpanStyled = styled.span`
     font-weight: 600;
-    color: ${props => props.negative ? colors.flame : props.positive ? colors.mediumSeaGreen : colors.earieBlack}
+    color: ${props => props.number < 0 ? colors.flame : props.number === 0 ? colors.earieBlack : colors.mediumSeaGreen}
 `
 
 export {SpanStyled}
