@@ -2,8 +2,9 @@ import React, {useEffect, useState} from 'react';
 import SearchResultsList from '../components/SearchResultsList';
 
 const filterList = (data, query) => data.filter(item => {
-
-  return (item[1].name).includes(query);
+  const needle = query.toLowerCase();
+  const haystack = item[1].name.toLowerCase();
+  return haystack.includes(needle);
 });
 
 export default function SearchResultPage({ location }) {

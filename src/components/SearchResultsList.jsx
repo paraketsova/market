@@ -13,6 +13,9 @@ export default function List(props) {
         <ListHeaderStyled>
         <h3>Search results</h3>
         </ListHeaderStyled>
+        {list.length === 0 && (
+          <p>Your search did not match any crypto.</p>
+        )}
         {list.map((listItem) => (
           <ListItem key={listItem[0]} listItemData={listItem} type="crypto">
             {listItem[1].name}

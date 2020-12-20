@@ -6,19 +6,21 @@ export default function SearchForm() {
   const inputSearch = useRef();
   const history = useHistory();
 
-  const handleOnClick = useCallback(() => {
+  const handleOnClick = useCallback((event) => {
     console.log(inputSearch.current.value);//TEST
     history.push('/search?q=' + encodeURIComponent(inputSearch.current.value));
+    event.preventDefault();
   }, [history]);
 
   return (
-    <div>
+    <form onSubmit={handleOnClick} method="get" action="/search">
       <input
-        ref = {inputSearch}
-        type='search'
-        placeholder='Search crypto...'
+        ref={inputSearch}
+        name="q"
+        type="search"
+        placeholder="Search crypto..."
       />
-      <button onClick={handleOnClick}>🔍</button>
-    </div>
+      <button type="submit">🔍</button>
+    </form>
   );
 }
