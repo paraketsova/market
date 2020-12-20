@@ -6,7 +6,7 @@ const LinkListStyled = styled.ul`
   list-style: none;
   width: 50vw;
   height: 80vh;
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
 
     a{

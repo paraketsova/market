@@ -2,12 +2,15 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom';
 import DetailPage from '../pages/DetailPage';
 import ListPage from '../pages/ListPage';
+import SearchResultsPage from '../pages/SearchResultsPage'
 
 // Contains all routes to different pages on the site.
 export default function Routes() {
     return (
          
           <Switch>
+
+            <Route path="/search" component={SearchResultsPage}/>
           
             <Route path="/indexes/:id" component={DetailPage}/>
 
