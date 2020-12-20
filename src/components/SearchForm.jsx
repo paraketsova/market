@@ -10,8 +10,6 @@ export default function SearchForm() {
     console.log(inputSearch.current.value);//TEST
     history.push('/search?q=' + encodeURIComponent(inputSearch.current.value));
   }, [history]);
-/*   console.log(history.location);//TEST
-  console.log(history);//TEST */
 
   return (
     <div>

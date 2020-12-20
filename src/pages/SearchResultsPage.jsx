@@ -24,7 +24,7 @@ export default function SearchResultPage({ location }) {
   }, [query, url])
 
   return (
-    //TODO - update scrollbar for a little list; if nothing found add   'Your search -' + query + '- did not match any documents.'
+  
     <div>
       {!list && <h3>Loading...</h3>}
 			{list && 
